@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.RestController
 class SongController(
     private val service: SongService
 ) {
-    //val title = listOf("Golden", "Blue Valentine", "타임캡슐")
-
     @GetMapping("/songs")
     fun getSongs() = service.getAllSongs()
 }
